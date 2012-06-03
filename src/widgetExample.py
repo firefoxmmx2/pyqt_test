@@ -30,7 +30,7 @@ class CheckboxExample(QtGui.QWidget):
             
 class ToggleButtonExample(QtGui.QWidget):
     def __init__(self):
-        super(ToggleButtonExample, self).__init()
+        super(ToggleButtonExample, self).__init__()
         self.initUI()
         
     def initUI(self):
@@ -113,7 +113,7 @@ class ProgressBarExample(QtGui.QWidget):
         #self.btn.move(40,80)
         self.btn.clicked.connect(self.doAction)
         
-        self.timer = QtGui.QBasicTimer()
+        self.timer = QtCore.QBasicTimer()
         self.step = 0
         
         self.setGeometry(300,300,280,170)
