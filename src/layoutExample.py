@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-# -*- Coding:utf-8 -*-
+#coding:utf8
 
 from PyQt4 import QtGui
 

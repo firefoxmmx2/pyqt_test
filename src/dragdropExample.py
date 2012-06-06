@@ -79,3 +79,5 @@ class DragDropButtonExample2(QtGui.QWidget):
         e.setDropAction(QtCore.Qt.MoveAction)
         e.accept()
         
+
+        

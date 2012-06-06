@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- Coding:utf-8 -*-
 
 '''
@@ -41,8 +41,10 @@ def main():
     #widgetex8 = widgetExample.SplitterExample()
     #dragdropex1 = dragdropExample.DragDropButtonExample()
     #dragdropex2 = dragdropExample.DragDropButtonExample2()
-    drawingex = drawingExample.Example()
-    
+#    drawingex = drawingExample.Example()
+#    drawingex2 = drawingExample.DrawingPointExample()
+#    drawingex3 = drawingExample.DrawingColorExample()
+    drawingex4 = drawingExample.PenExample()
     sys.exit(app.exec_())
         
 if __name__ == '__main__':
