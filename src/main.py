@@ -44,7 +44,9 @@ def main():
 #    drawingex = drawingExample.Example()
 #    drawingex2 = drawingExample.DrawingPointExample()
 #    drawingex3 = drawingExample.DrawingColorExample()
+
     drawingex4 = drawingExample.PenExample()
+    
     sys.exit(app.exec_())
         
 if __name__ == '__main__':
