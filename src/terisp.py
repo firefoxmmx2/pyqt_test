@@ -143,7 +143,7 @@ class Board(QtGui.QFrame):
             QtGui.QWidget.keyPressEvent(self,e)
             
     def clearBoard(self):
-        for i in range(Board.boardHeight * Board.boardWidthr):
+        for i in range(Board.boardHeight * Board.boardWidth):
             self.board.append(Tetrominoes.NoShape)
             
     def dropDown(self):
@@ -351,7 +351,7 @@ class Shape(object):
     
 app = QtGui.QApplication(sys.argv)
 teris = Tetris()
-Tetris.show()
+teris.show()
 
 sys.exit(app.exec_())
             
