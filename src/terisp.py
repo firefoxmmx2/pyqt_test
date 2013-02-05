@@ -35,7 +35,7 @@ class Tetris(QtGui.QMainWindow):
 class Board(QtGui.QFrame):
     boardWidth = 10
     boardHeight=22
-    speed=300
+    speed=500
     
     def __init__(self,parent):
         super(Board, self).__init__(parent)
@@ -151,7 +151,7 @@ class Board(QtGui.QFrame):
         while newY > 0:
             if not self.tryMove(self.curPiece, self.curX, newY - 1):
                 break
-            newY = 1
+            newY -= 1
         self.pieceDropped()
     def timerEvent(self, e):
         if e.timerId() == self.timer.timerId():
@@ -350,8 +350,8 @@ class Shape(object):
         return result
     
 app = QtGui.QApplication(sys.argv)
-teris = Tetris()
-teris.show()
+tetris = Tetris()
+tetris.show()
 
 sys.exit(app.exec_())
             
